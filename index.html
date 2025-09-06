@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anton's Course Home Page">
+    <meta name="author" content="Anton Syzov">
+    <title>Anton's Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/web-certificate-courses.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span class="epunda-slab">Anton's Course Home</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu Button"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="epunda-slab">Home</h1>
+        <section class="about-me">
+            <h2 class="epunda-slab">About Me</h2>
+            <div class="section-content">
+                <p>My name is Anton. I was born in Ukraine and live now in Germany. Now I'm studying Computer Science at
+                    BYU. I love everything about languages, especially about
+                    Chinese.
+                    I love meeting new people and explore this world.</p>
+            </div>
+        </section>
+        <section class="student-photo">
+            <h2 class="epunda-slab">Student Photo</h2>
+            <div class="section-content">
+                <img class="student-photo-img" src="images/student-photo.jpg" alt="Student photo">
+            </div>
+        </section>
+        <section class="web-certificate-courses">
+            <h2 class="epunda-slab">Web Certificate Courses</h2>
+            <div class="section-content">
+                <div class="courses-filtering-container">
+                    <button id="allCoursesBtn" class="courses-filtering-btn">All Courses</button>
+                    <button id="wddCoursesBtn" class="courses-filtering-btn">WDD Courses</button>
+                    <button id="cseCoursesBtn" class="courses-filtering-btn">CSE Courses</button>
+                </div>
+                <p id="total-credits"></p>
+                <ul class="courses-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media-part">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/anton-sizov-451b49160/"><img src="images/linkedin.svg"
+                            alt="LinkedIn" width="800" height="800"></a></li>
+                <li><a href="https://github.com/aantonssizov"><img src="images/github.svg" alt="GitHub" width="800"
+                            height="800"></a></li>
+                <li><a href="https://www.facebook.com/anton.syzov"><img src="images/facebook.svg" alt="Facebook"
+                            width="800" height="800"></a></li>
+            </ul>
+        </div>
+        <div class="dates-part">
+            <p><span id="currentyear"></span> &bull; Anton Syzov &bull; Moldova</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

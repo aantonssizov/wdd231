@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --pale-violet: #BAA5FC;
+    --navy-blue: #100876;
+    --chocolate-cosmos: #52050a;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.epunda-slab {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px var(--almond);
+    column-gap: 8px;
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    background-color: var(--pale-violet);
+}
+
+.navigation.show {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    margin: 0;
+}
+
+nav ul li {
+    height: 44px;
+    list-style-type: none;
+}
+
+nav ul li.current a {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    align-content: center;
+    text-decoration: none;
+    color: var(--navy-blue);
+}
+
+nav ul li a:hover {
+    color: var(--chocolate-cosmos);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+main section {
+    text-align: center;
+}
+
+main section h2 {
+    background-color: var(--pale-violet);
+    color: var(--navy-blue);
+    padding: 5px;
+    margin: 0;
+}
+
+main section .section-content {
+    padding: 8px;
+}
+
+.student-photo-img {
+    max-width: 100%;
+}
+
+.courses-filtering-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.courses-filtering-btn {
+    border: 1px solid var(--pale-violet);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.courses-filtering-btn:focus,
+.courses-filtering-btn:hover {
+    color: var(--navy-blue);
+}
+
+ul.courses-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+ul.courses-list li {
+    list-style-type: none;
+    border: 1px solid var(--pale-violet);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+ul.courses-list li.completed {
+    border-color: var(--chocolate-cosmos);
+}
+
+footer .social-media-part {
+    padding: 8px;
+}
+
+footer .social-media-part ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social-media-part ul li {
+    list-style-type: none;
+}
+
+footer .social-media-part ul li a img {
+    width: 44px;
+    height: 44px;
+}
+
+footer .dates-part {
+    background-color: var(--pale-violet);
+    padding: 8px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+#lastModified {
+    color: var(--chocolate-cosmos);
+}
