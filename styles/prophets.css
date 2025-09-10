@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+main,
+header,
+footer {
+    padding: 8px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 8px;
+    padding: 8px;
+}
+
+section {
+    text-align: center;
+    background-color: #BAA5FC;
+}
+
+section h2 {
+    color: #52050a;
+}
+
+section img {
+    max-width: 100%;
+}
