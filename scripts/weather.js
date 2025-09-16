@@ -1,4 +1,4 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&units=metric&appid=11a3187600a64bd0eb21ef73a0fd62fb';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&units=metric&appid={API Key}';
 
 const displayResults = (data) => {
     const currentTemp = document.querySelector('#current-temp');
