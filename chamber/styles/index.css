@@ -1,0 +1,78 @@
+@import "base.css";
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+
+    section {
+        border: 1px solid var(--jacarta);
+        border-radius: 5px;
+        padding: 16px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .spotlights-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .spotlight-container {
+            text-align: center;
+
+            .spotlight-info-container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: start;
+                border-top: 1px solid var(--jacarta);
+                padding-top: 8px;
+
+                .spotlight-logo {
+                    width: 50%;
+                    height: auto;
+                    align-self: center;
+                }
+
+                p {
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.hero-block {
+    width: 100%;
+    margin: -16px -16px 0 -16px;
+    position: relative;
+
+    .hero-img {
+        max-width: calc(100% + 32px);
+        height: auto;
+    }
+
+    .hero-cta {
+        position: absolute;
+        bottom: 16px;
+        right: -16px;
+        text-decoration: none;
+        background-color: var(--jacarta);
+        color: var(--lotion);
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        opacity: .95;
+
+        &:active,
+        &:hover {
+            color: var(--pale-cornflower-blue);
+            transition: color .25s ease-in;
+        }
+    }
+}

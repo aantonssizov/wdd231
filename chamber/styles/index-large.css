@@ -1,0 +1,50 @@
+@import "base-large.css";
+
+@media only screen and (min-width:38rem) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+
+        .hero-block {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+
+        h1 {
+            grid-column: 1 / 4;
+        }
+
+        .spotlights-container {
+            grid-column: 1 / 4;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            .spotlight-container {
+                flex-basis: 50%;
+                text-align: center;
+
+                .spotlight-info-container {
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                    border-top: 1px solid var(--jacarta);
+                    padding-top: 8px;
+
+                    .spotlight-logo {
+                        height: auto;
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 6;
+                        justify-self: center;
+                    }
+
+                    p {
+                        grid-column: 2 / 3;
+                        margin: 0;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

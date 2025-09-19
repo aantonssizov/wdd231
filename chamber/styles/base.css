@@ -1,5 +1,3 @@
-@import "base.css";
-
 :root {
     --jacarta: #382f5d;
     --pale-cornflower-blue: #B1CEF9;
@@ -120,98 +118,14 @@ header button.theme-switcher-btn img {
 }
 
 main {
-    .mode-switchers {
-        text-align: center;
+    min-height: 800px;
+    margin: 16px;
+    border: 1px solid var(--jacarta);
+    border-radius: 5px;
+    padding: 16px;
 
-        & button {
-            border: 1px solid var(--jacarta);
-            border-radius: 5px;
-            font-size: 1.5rem;
-            background: none;
-            color: var(--jacarta);
-        }
-    }
-
-    .members-container {
-        margin-top: 8px;
-
-        &.cards {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;
-            gap: 8px;
-
-            section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-                border: 1px solid var(--jacarta);
-                border-radius: 5px;
-                padding: 8px;
-
-                img {
-                    width: 96px;
-                    height: 96px;
-                }
-
-                a {
-                    font-size: 1.15rem;
-                    text-decoration: none;
-                    color: var(--jacarta);
-                    font-family: Goldman, sans-serif;
-                    font-weight: 700;
-                    text-align: center;
-                }
-
-                p {
-                    margin: 0;
-                    text-align: center;
-                }
-            }
-        }
-
-        &.list {
-            display: flex;
-            flex-direction: column;
-
-            section {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                align-items: center;
-                gap: 5px;
-
-                &:nth-child(even) {
-                    background-color: #cfcfcf;
-                }
-
-                img,
-                p.membership-level {
-                    display: none;
-                }
-
-                a,
-                p {
-                    word-break: break-all;
-                }
-
-                a {
-                    display: block;
-                    font-size: 1.15rem;
-                    text-decoration: none;
-                    color: var(--jacarta);
-                    font-family: Goldman, sans-serif;
-                    font-weight: 700;
-                    text-align: center;
-                }
-
-                p {
-                    margin: 0;
-                    text-align: center;
-                }
-            }
-        }
+    h1 {
+        color: var(--jacarta)
     }
 }
 

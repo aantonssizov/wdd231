@@ -1,4 +1,5 @@
-const url = 'data/members.json';
+import { members, getMembershipLevel } from './members.mjs';
+
 const membersContainer = document.querySelector(".members-container");
 const cardsBtn = document.querySelector("#cardsBtn");
 const listBtn = document.querySelector("#listBtn");
@@ -8,24 +9,10 @@ cardsBtn.addEventListener("click", () => {
     membersContainer.classList.remove("list");
 })
 
-
 listBtn.addEventListener("click", () => {
     membersContainer.classList.remove("cards");
     membersContainer.classList.add("list");
 })
-
-const getMembershipLevel = (membershipLevel) => {
-    switch (membershipLevel) {
-        case 1:
-            return "member";
-        case 2:
-            return "silver";
-        case 3:
-            return "gold";
-        default:
-            return membershipLevel;
-    }
-}
 
 const displayMembers = (members) => {
     members.forEach(member => {
@@ -57,11 +44,4 @@ const displayMembers = (members) => {
     });
 }
 
-async function getMembersData() {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    displayMembers(data.members);
-}
-
-getMembersData();
+displayMembers(members);

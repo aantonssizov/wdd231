@@ -6,7 +6,9 @@
             "phonenumber": "(344) 895-2766",
             "website": "https://aecom.com",
             "logo": "https://cdn.worldvectorlogo.com/logos/homeaway-3.svg",
-            "membershipLevel": 1
+            "membershipLevel": 1,
+            "email": "info@aecom.com",
+            "tagLine": "Imagine it. Delivered."
         },
         {
             "name": "Blue Ridge Analytics",
@@ -14,7 +16,9 @@
             "phonenumber": "(828) 555-0192",
             "website": "https://blueridgeanalytics.com",
             "logo": "https://cdn.brandfetch.io/idXKs4rz_d/w/240/h/240/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
-            "membershipLevel": 2
+            "membershipLevel": 2,
+            "email": "contact@siteops.com",
+            "tagLine": "Optimizing land development through innovation."
         },
         {
             "name": "CivicWorks Group",
@@ -22,7 +26,9 @@
             "phonenumber": "(415) 321-7788",
             "website": "https://civicworksgroup.org",
             "logo": "https://cdn.brandfetch.io/idXXlVBrwP/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
-            "membershipLevel": 3
+            "membershipLevel": 3,
+            "email": "info@civicworksgroup.org",
+            "tagLine": "Strengthening communities through service."
         },
         {
             "name": "EcoStruct Inc.",
@@ -30,7 +36,9 @@
             "phonenumber": "(303) 867-5309",
             "website": "https://ecostruct.com",
             "logo": "https://cdn.worldvectorlogo.com/logos/eco.svg",
-            "membershipLevel": 1
+            "membershipLevel": 1,
+            "email": "jeklund@ecostruct.com",
+            "tagLine": "Building a sustainable future."
         },
         {
             "name": "UrbanEdge Solutions",
@@ -38,7 +46,9 @@
             "phonenumber": "(212) 555-9843",
             "website": "https://urbanedge.io",
             "logo": "https://cdn.worldvectorlogo.com/logos/urban.svg",
-            "membershipLevel": 2
+            "membershipLevel": 2,
+            "email": "info@urbanedge.org",
+            "tagLine": "Creating vibrant, resilient neighborhoods."
         },
         {
             "name": "TerraNova Design",
@@ -46,7 +56,9 @@
             "phonenumber": "(213) 444-2211",
             "website": "https://terranovadesign.com",
             "logo": "https://cdn.worldvectorlogo.com/logos/terra.svg",
-            "membershipLevel": 3
+            "membershipLevel": 3,
+            "email": "info@terranovadesigns.com",
+            "tagLine": "Designing spaces that inspire."
         },
         {
             "name": "NexGen Infrastructure",
@@ -54,7 +66,9 @@
             "phonenumber": "(512) 777-3000",
             "website": "https://nexgeninfra.com",
             "logo": "https://cdn.brandfetch.io/idvLsdEXmk/w/788/h/788/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
-            "membershipLevel": 1
+            "membershipLevel": 1,
+            "email": "info@nexgeninfra.com",
+            "tagLine": "Building tomorrow’s infrastructure today."
         }
     ]
 }

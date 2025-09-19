@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory</title>
-    <meta name="description" content="Chamber Directory">
+    <title>Chamber Home</title>
+    <meta name="description" content="Chamber Home">
     <meta name="author" content="Anton Syzov">
-    <meta property="og:title" content="Chamber Directory" />
-    <meta property="og:description" content="Chamber Directory" />
-    <meta property="og:url" content="https://aantonssizov.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:title" content="Chamber Home" />
+    <meta property="og:description" content="Chamber Home" />
+    <meta property="og:url" content="https://aantonssizov.github.io/wdd231/chamber/index.html" />
     <meta property="og:image" content="https://aantonssizov.github.io/wdd231/chamber/images/wagon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,12 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/directory.mjs"></script>
+    <script type="module" src="scripts/spotlights.mjs"></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -31,8 +32,8 @@
         <span class="title">Timbuktu Chamber of Commerce</span>
         <nav id="nav-bar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="current">Directory</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -42,12 +43,30 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu Button"></button>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="mode-switchers">
-            <button id="cardsBtn">⊞</button>
-            <button id="listBtn">☰</button>
+        <div class="hero-block">
+            <img class="hero-img" src="images/hero.webp" alt="Hero Image" width="1500px" height="844px">
+            <a class="hero-cta" href="#">Keynote Tickets</a>
         </div>
-        <div class="members-container cards"></div>
+        <h1>Home</h1>
+        <section>
+            <h2>Events</h2>
+            <div class="events-container">
+                <p>Tomorrow - thematical meetup at AECOM at 4pm</p>
+                <p>Tomorrow - workshop at Blue Ridge Analytics at 1pm</p>
+            </div>
+        </section>
+        <section>
+            <h2>Current Weather</h2>
+            <p>The current temperature is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        <section id="forecast">
+            <h2>Weather Forecast</h2>
+        </section>
+        <div class="spotlights-container"></div>
     </main>
     <footer>
         <div class="contact-info-block">

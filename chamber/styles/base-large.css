@@ -1,0 +1,44 @@
+@media only screen and (min-width:38rem) {
+
+    header {
+        grid-template-columns: 48px auto 1fr auto 48px;
+        grid-row: auto;
+    }
+
+    header img.logo {
+        grid-column: 1 / 2;
+    }
+
+    header span.title {
+        grid-column: 2 / 3;
+    }
+
+    header nav {
+        display: block;
+        grid-column: 4 / 5;
+        grid-row: inherit;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    header button.theme-switcher-btn {
+        grid-column: 5 / 6;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        min-height: 400px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
