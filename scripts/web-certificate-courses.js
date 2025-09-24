@@ -89,10 +89,33 @@ function renderCourses(courses) {
 
     courses.forEach(course => {
         const liElm = document.createElement("li");
-        liElm.textContent = `${course.completed ? '✓' : ''} ${course.subject} ${course.number}`
+        liElm.textContent = `${course.completed ? '✓' : ''} ${course.subject} ${course.number}`;
         if (course.completed)
             liElm.classList.add("completed");
         coursesListElm.appendChild(liElm);
+        liElm.addEventListener('click', () => {
+            const dialog = document.querySelector("dialog#course-details");
+            const closeModal = document.createElement("button");
+            const courseName = document.createElement("h2");
+            const title = document.createElement("h3");
+            const credits = document.createElement("p");
+            const description = document.createElement("p");
+            const certificate = document.createElement("p");
+            const technologyStack = document.createElement("p");
+
+            courseName.textContent = `${course.completed ? '✓' : ''} ${course.subject} ${course.number}`;
+            title.textContent = course.title;
+            credits.textContent = `Credits: ${course.credits}`;
+            description.textContent = `Description: ${course.description}`;
+            certificate.textContent = `Certificate: ${course.certificate}`;
+            technologyStack.textContent = `Technology Stack: ${course.technology.join(", ")}`
+
+            closeModal.textContent = 'X';
+            closeModal.addEventListener("click", () => dialog.close());
+
+            dialog.replaceChildren(closeModal, courseName, title, credits, description, certificate, technologyStack)
+            dialog.showModal();
+        });
     });
 }
 

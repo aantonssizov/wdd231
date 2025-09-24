@@ -158,6 +158,38 @@ ul.courses-list li.completed {
     border-color: var(--chocolate-cosmos);
 }
 
+dialog {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+
+    h2 {
+        background-color: var(--pale-violet);
+        color: var(--navy-blue);
+        padding: 5px;
+    }
+
+    button {
+        position: absolute;
+        right: 25px;
+        top: 47px;
+        color: var(--chocolate-cosmos);
+        border: 1px solid var(--navy-blue);
+        background-color: var(--pale-violet);
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
 footer .social-media-part {
     padding: 8px;
 }
