@@ -118,8 +118,9 @@ header button.theme-switcher-btn img {
 }
 
 main {
+    max-width: 1024px;
     min-height: 800px;
-    margin: 16px;
+    margin: 16px auto;
     border: 1px solid var(--jacarta);
     border-radius: 5px;
     padding: 16px;
