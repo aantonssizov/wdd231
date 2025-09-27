@@ -34,11 +34,19 @@
 
     main {
         min-height: 400px;
+        max-width: 1024px;
+        margin: 16px auto;
     }
 
     footer {
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    main {
+        margin: 16px;
     }
 }

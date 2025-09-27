@@ -1,0 +1,84 @@
+@import "base.css";
+
+main {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            outline-color: var(--jacarta);
+        }
+
+        button[type=submit] {
+            background-color: var(--lotion);
+            border: 1px solid var(--jacarta);
+            border-radius: 5px;
+            color: var(--jacarta);
+            padding: 5px;
+            font-weight: bold;
+        }
+    }
+
+    h2,
+    h3 {
+        color: var(--jacarta);
+    }
+
+    .membership-levels-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .membership-level-container {
+            border: 1px solid var(--jacarta);
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            animation: moveIn 1s alternate ease;
+
+            h3 {
+                margin-top: 0;
+            }
+
+            button {
+                background-color: var(--lotion);
+                border: 1px solid var(--jacarta);
+                border-radius: 5px;
+                color: var(--jacarta);
+                padding: 5px;
+                font-weight: bold;
+            }
+        }
+
+        dialog button {
+            width: 100%;
+            background-color: var(--lotion);
+            border: 1px solid var(--jacarta);
+            border-radius: 5px;
+            color: var(--jacarta);
+            padding: 5px;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes moveIn {
+    from {
+        transform: translateY(100px);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
