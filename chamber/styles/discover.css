@@ -1,0 +1,54 @@
+@import "base.css";
+
+.places-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    section {
+        display: grid;
+        grid-template-areas:
+            "title"
+            "image"
+            "address"
+            "description"
+            "learnMore";
+        border: 1px solid var(--jacarta);
+        border-radius: 5px;
+        padding: 16px;
+        align-items: center;
+        justify-items: center;
+
+        h2 {
+            grid-area: title;
+            color: var(--jacarta);
+        }
+
+        figure {
+            margin: 20px 16px;
+            grid-area: image;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        address {
+            grid-area: address;
+        }
+
+        p {
+            grid-area: description;
+        }
+
+        button {
+            justify-self: stretch;
+            grid-area: learnMore;
+            border: 1px solid var(--jacarta);
+            border-radius: 5px;
+            background: none;
+            padding: 5px;
+            color: var(--jacarta);
+        }
+    }
+}

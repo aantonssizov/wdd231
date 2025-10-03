@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Thank You</title>
-    <meta name="description" content="Chamber Thank You">
+    <title>Chamber Discover</title>
+    <meta name="description" content="Chamber Discover">
     <meta name="author" content="Anton Syzov">
-    <meta property="og:title" content="Chamber Thank You">
-    <meta property="og:description" content="Chamber Thank You">
-    <meta property="og:url" content="https://aantonssizov.github.io/wdd231/thankyou.html">
+    <meta property="og:title" content="Chamber Discover">
+    <meta property="og:description" content="Chamber Discover">
+    <meta property="og:url" content="https://aantonssizov.github.io/wdd231/chamber/discover.html">
     <meta property="og:image" content="https://aantonssizov.github.io/wdd231/chamber/images/wagon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/thankyou.css">
-    <link rel="stylesheet" href="styles/thankyou-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+    <script type="module" src="scripts/discover.mjs"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="current">Discover</a></li>
             </ul>
         </nav>
         <button id="switchTheme" class="theme-switcher-btn"><img src="images/dark-theme.svg" alt="Dark Theme"
@@ -42,8 +42,9 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu Button"></button>
     </header>
     <main>
-        <h1>Thank you!</h1>
-        <p>Thank you for filling out the join form. We are looking forward to start collaborating with you!</p>
+        <h1>Discover!</h1>
+        <p id="daysSince">Days Since You Last Visited:</p>
+        <div class="places-container"></div>
     </main>
     <footer>
         <div class="contact-info-block">

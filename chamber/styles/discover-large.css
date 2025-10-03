@@ -1,0 +1,44 @@
+@import "base-large.css";
+
+@media only screen and (min-width:38rem) {
+
+    main {
+        min-height: 600px;
+    }
+
+    .places-container {
+        section {
+            grid-template-areas:
+                "image title"
+                "image address"
+                "image description"
+                "image learnMore";
+        }
+    }
+}
+
+@media only screen and (min-width:64rem) {
+
+    .places-container {
+        grid-template-columns: 1fr 1fr;
+
+        section {
+            grid-template-areas:
+                "title"
+                "image"
+                "address"
+                "description"
+                "learnMore";
+
+
+            figure img {
+                transition: border-radius .25s ease-in;
+
+                &:hover {
+                    border-radius: 15px 75px;
+                    transition: border-radius .25s ease-in;
+                }
+            }
+        }
+    }
+}
