@@ -1,0 +1,20 @@
+@import "base.css";
+
+.main-color {
+    color: var(--old-gold);
+    background-color: black;
+    padding: 5px;
+    width: fit-content;
+}
+
+.secondary-color {
+    color: var(--turquoise);
+    background-color: black;
+    padding: 5px;
+    width: fit-content;
+}
+
+body {
+    width: fit-content;
+    margin: 0 auto;
+}

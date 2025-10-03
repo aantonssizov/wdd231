@@ -1,0 +1,17 @@
+:root {
+    --old-gold: #CCBA62;
+    --turquoise: #5EDCD1;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Trade Winds", system-ui;
+}
