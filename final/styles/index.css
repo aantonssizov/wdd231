@@ -1,1 +1,92 @@
 @import "base.css";
+
+main {
+    background-color: var(--dark-green);
+
+    .hero-block {
+        background-image: url("../images/hero.webp");
+        background-position: center;
+        background-size: auto;
+        background-clip: border-box;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        height: 400px;
+
+        &>.main-container {
+            height: 100%;
+            padding: 24px;
+            display: grid;
+            gap: 8px;
+            grid-template-rows: auto auto 1fr auto;
+            justify-items: center;
+
+            h1,
+            p,
+            a {
+                margin: 0;
+                background-color: var(--dark-green);
+                padding: 8px;
+                border-radius: 5px;
+                opacity: .95;
+            }
+
+            h1 {
+                color: var(--old-gold);
+            }
+
+            p {
+                color: var(--lotion);
+            }
+
+            a {
+                grid-row: 4;
+                text-decoration: none;
+                color: var(--turquoise);
+                transform: text-decoration .5s ease-in;
+
+                &:hover {
+                    transform: text-decoration .5s ease-in;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &>.main-container {
+        overflow: hidden;
+
+        .map-block {
+            background-color: var(--dark-green);
+            border: 1px solid var(--lotion);
+            border-radius: 5px;
+            padding: 24px;
+            margin: 24px;
+
+            h2 {
+                margin-top: 0;
+                text-align: center;
+                color: var(--old-gold);
+            }
+
+            #map {
+                height: 180px;
+            }
+
+            p,
+            address {
+                color: var(--lotion);
+            }
+
+            a {
+                color: var(--turquoise);
+                text-decoration: none;
+                transform: text-decoration .5s ease-in;
+
+                &:hover {
+                    transform: text-decoration .5s ease-in;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

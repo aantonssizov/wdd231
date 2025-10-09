@@ -20,7 +20,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script type="module" src="scripts/navigation.mjs"></script>
+    <script type="module" src="scripts/location.mjs"></script>
 </head>
 
 <body>
@@ -39,7 +44,23 @@
         </div>
     </header>
     <main>
-        <div class="main-container"></div>
+        <div class="hero-block">
+            <div class="main-container">
+                <h1>Frankfurt Canoe</h1>
+                <p>Row freely in your boat with us in Frankfurt!</p>
+                <a href="#">Row with us!</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="map-block">
+                <h2>Find Us Here!</h2>
+                <div id="map"></div>
+                <div class="map-info">
+                    <address>Address: Schaumainkai 90, 60596 Frankfurt am Main</address>
+                    <p>Official website: <a href="http://www.frankfurtkanu.de/">frankfurtkanu.de</a></p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="main-container">

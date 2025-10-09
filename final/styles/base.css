@@ -28,6 +28,14 @@ footer {
     padding: 16px;
 }
 
+header {
+    border-bottom: 1px solid var(--lotion);
+}
+
+footer {
+    border-top: 1px solid var(--lotion);
+}
+
 .main-container {
     max-width: 768px;
     margin: 0 auto;
