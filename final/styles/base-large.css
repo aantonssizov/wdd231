@@ -1,0 +1,33 @@
+@media screen and (min-width:768px) {
+    header>.main-container {
+        grid-template-columns: 48px 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        nav {
+            display: block;
+            grid-column: 3;
+
+            ul {
+                flex-direction: row;
+                justify-content: end;
+
+                li a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: var(--turquoise);
+                    transform: text-decoration .5s ease-in;
+
+                    &:hover,
+                    &.current {
+                        transform: text-decoration .5s ease-in;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    button.hamburger {
+        display: none;
+    }
+}
