@@ -1,0 +1,7 @@
+@import "base-large.css";
+
+@media screen and (min-width:768px) {
+    .events-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
