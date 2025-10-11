@@ -36,6 +36,7 @@ main {
             display: grid;
             padding: 16px;
             gap: 16px;
+            min-height: 800px;
 
             section {
                 padding: 16px;
