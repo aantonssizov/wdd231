@@ -30,4 +30,8 @@
     button.hamburger {
         display: none;
     }
+
+    footer>.main-container {
+        flex-direction: row;
+    }
 }
