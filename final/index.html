@@ -26,6 +26,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script type="module" src="scripts/navigation.mjs"></script>
     <script type="module" src="scripts/location.mjs"></script>
+    <script type="module" src="scripts/weather.mjs"></script>
 </head>
 
 <body>
@@ -52,14 +53,26 @@
             </div>
         </div>
         <div class="main-container">
-            <div class="map-block">
+            <section class="map-block">
                 <h2>Find Us Here!</h2>
                 <div id="map"></div>
                 <div class="map-info">
                     <address>Address: Schaumainkai 90, 60596 Frankfurt am Main</address>
                     <p>Official website: <a href="http://www.frankfurtkanu.de/">frankfurtkanu.de</a></p>
                 </div>
-            </div>
+            </section>
+            <section class="weather-block">
+                <h2>Current Weather in Frunkfurt</h2>
+                <div class="weather-info">
+                    <p><b>Description: </b><span id="weather-description"></span></p>
+                    <p><b>Temperature: </b><span id="weather-temp"></span></p>
+                    <p><b>Pressure: </b><span id="weather-pressure"></span></p>
+                    <p><b>Humidity: </b><span id="weather-humidity"></span></p>
+                    <p><b>Visibility: </b><span id="weather-visibility"></span></p>
+                    <p><b>Wind: </b><span id="weather-wind"></span></p>
+                </div>
+                <img src="#" alt="Weather Icon" width="96" height="96">
+            </section>
         </div>
     </main>
     <footer>

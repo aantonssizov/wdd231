@@ -55,7 +55,7 @@ main {
     &>.main-container {
         overflow: hidden;
 
-        .map-block {
+        section {
             background-color: var(--dark-green);
             border: 1px solid var(--lotion);
             border-radius: 5px;
@@ -67,7 +67,9 @@ main {
                 text-align: center;
                 color: var(--old-gold);
             }
+        }
 
+        .map-block {
             #map {
                 height: 180px;
             }
@@ -86,6 +88,20 @@ main {
                     transform: text-decoration .5s ease-in;
                     text-decoration: underline;
                 }
+            }
+        }
+
+        .weather-block {
+            display: grid;
+
+            p {
+                color: var(--lotion);
+            }
+
+            img {
+                grid-row: 2;
+                justify-self: center;
+                align-self: center;
             }
         }
     }
