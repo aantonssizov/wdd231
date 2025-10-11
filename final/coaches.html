@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frankfurt Canoe - Coaches</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Coaches page lists coaches of the club with option to start training with any of them.">
+    <meta name="author" content="Anton Syzov">
+    <meta property="og:title" content="Frankfurt Canoe - Coaches" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aantonssizov.github.io/wdd231/final/coaches.html" />
+    <meta property="og:image" content="https://aantonssizov.github.io/wdd231/images/hero.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Trade+Winds&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/coaches.css">
+    <link rel="stylesheet" href="styles/coaches-large.css">
+    <script type="module" src="scripts/navigation.mjs"></script>
+    <script type="module" src="scripts/coaches.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main-container">
+            <img src="images/logo.svg" alt="Logo" width="48" height="48">
+            <span class="title">Frankfurt Canoe</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="coaches.html" class="current">Coaches</a></li>
+                </ul>
+            </nav>
+            <button id="ham-btn" class="hamburger" aria-label="Menu Button"></button>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Our Coaches!</h1>
+            <div class="coaches-container">
+                <section>
+                    <img src="images/coach-mike.jpg" alt="Coach Mike Stenly">
+                    <h2>Mike Stenly</h2>
+                    <p>A former competitive paddler turned coach, Mike brings over 15 years of experience navigating
+                        Germany's rivers and
+                        lakes. Known for his calm demeanor and laser-sharp technique, he specializes in training
+                        intermediate and advanced
+                        athletes for endurance races. Mike's coaching style blends precision drills with mental
+                        resilience training, and he's
+                        often spotted at the Main River before sunrise, charting new routes for his team.</p>
+                    <button id="contact-mike">Contact!</button>
+                </section>
+                <section>
+                    <img src="images/coach-lucy.jpg" alt="Coach Lucy">
+                    <h2>Lucy Smith</h2>
+                    <p>Lucy is the heart of the Frankfurt canoe scene—a dynamic coach with a background in sports
+                        science and a passion for
+                        youth development. She's especially skilled at working with beginners and younger paddlers,
+                        using playful yet structured
+                        methods to build confidence and coordination. Her sessions often include team-building games and
+                        nature-based
+                        challenges, making her a favorite among local schools and family clubs.</p>
+                    <button id="contact-lucy">Contact!</button>
+                </section>
+                <section>
+                    <img src="images/coach-thomas.jpg" alt="Coach Thomas">
+                    <h2>Thomas Fray</h2>
+                    <p>Thomas is the strategist of the trio, with a reputation for turning underdogs into champions.
+                        With a background in
+                        biomechanics and a love for data-driven training, he tailors each session to the athlete's
+                        unique strengths. He's also a
+                        certified nutritionist, often advising his paddlers on recovery and performance diets. When not
+                        coaching, Thomas
+                        contributes to canoeing journals and speaks at regional sports conferences.</p>
+                    <button id="contact-thomas">Contact!</button>
+                </section>
+                <dialog id="contact-coach-dialog">
+                    <h2>Contact the coach!</h2>
+                    <form action="thankyou.html">
+                        <label for="coach-name">Coach Name:</label>
+                        <select name="coachname" id="coach-name" required>
+                            <option value="Lucy Smith">Lucy Smith</option>
+                            <option value="Mike Stenly">Mike Stenly</option>
+                            <option value="Thomas Fray">Thomas Fray</option>
+                        </select>
+                        <label for="first-name">Your First Name: </label>
+                        <input type="text" name="firstname" id="first-name" required autocomplete="given-name">
+                        <label for="phone">Your phone: </label>
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel">
+                        <label for="message">Your message (optional): </label>
+                        <textarea name="message" id="message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <button id="close-dialog">Cancel</button>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main-container">
+            <p>&copy;2025 - Anton Syzov - WDD231 Final Project - Frankfurt, Germany</p>
+        </div>
+    </footer>
+</body>
+
+</html>

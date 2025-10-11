@@ -1,0 +1,26 @@
+@import "base.css";
+@import "base-large.css";
+
+main {
+    background-color: var(--dark-green);
+    overflow: hidden;
+
+    .main-container {
+        padding: 16px;
+
+        h1 {
+            text-align: center;
+            color: var(--old-gold);
+        }
+
+        p {
+            color: var(--lotion);
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

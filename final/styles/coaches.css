@@ -1,0 +1,95 @@
+@import "base.css";
+
+main {
+    background-color: var(--dark-green);
+    overflow: hidden;
+
+    .main-container {
+        h1 {
+            text-align: center;
+            color: var(--old-gold);
+        }
+
+        .coaches-container {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 16px;
+
+            section {
+                border: 1px solid var(--lotion);
+                border-radius: 5px;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    margin-bottom: 0;
+                    color: var(--old-gold);
+                }
+
+                img {
+                    border-radius: 50%;
+                }
+
+                p {
+                    color: var(--lotion);
+                }
+
+                button {
+                    border: 1px solid var(--turquoise);
+                    border-radius: 5px;
+                    background: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    color: var(--turquoise);
+                }
+            }
+
+            dialog:open {
+                background-color: var(--dark-green);
+                border: 1px solid var(--lotion);
+                border-radius: 5px;
+                width: 400px;
+                box-shadow: 0px 0px 15px 0px #A0A0A0;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                h2 {
+                    color: var(--old-gold);
+                    align-self: center;
+                    margin: 0;
+                }
+
+                form {
+                    color: var(--lotion);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    select,
+                    input,
+                    textarea {
+                        padding: 5px;
+                    }
+                }
+
+                button {
+                    border: 1px solid var(--turquoise);
+                    border-radius: 5px;
+                    background: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    color: var(--turquoise);
+
+                    &[type=submit] {
+                        border-color: var(--old-gold);
+                        color: var(--old-gold);
+                    }
+                }
+            }
+        }
+    }
+}
